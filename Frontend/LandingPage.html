@@ -1,11 +1,322 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Voting System</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SecureVote - Online Voting System</title>
+
+    <!-- using google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- using icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="container navbar">
+        <div class="logo">
+          <h2>
+            <span class="blue">Secure</span><span class="green">Vote</span>
+          </h2>
+
+          <p>Your Vote, Your Future</p>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#howitworks">How It Works</a></li>
+
+            <li><a href="#features">Features</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-buttons">
+          <button class="login-btn">Login</button>
+
+          <button class="register-btn">Register</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <!-- Left Side -->
+
+        <div class="hero-text">
+          <h1>A Secure and Transparent Way to Vote Online</h1>
+
+          <p>
+            SecureVote is a web-based online voting platform that allows users
+            to participate in elections safely and conveniently. The system
+            provides secure authentication, encrypted voting and real-time
+            election results.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="primary-btn">Vote Now</button>
+
+            <button class="secondary-btn">Learn More</button>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="hero-image">
+          <img src="assets/hero.png" alt="Online Voting" />
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Choose SecureVote?</h2>
+          <p>
+            SecureVote provides a modern, secure and transparent platform for
+            conducting online elections.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>Secure Voting</h3>
+
+            <p>
+              Advanced authentication and encrypted voting ensure that every
+              vote remains safe and confidential.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <i class="fa-solid fa-chart-column"></i>
+
+            <h3>Live Results</h3>
+
+            <p>
+              View election statistics and vote counting in real time after the
+              election ends.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <i class="fa-solid fa-user-check"></i>
+
+            <h3>Verified Voters</h3>
+
+            <p>
+              OTP verification and voter ID validation prevent duplicate and
+              fake voting.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>Fast Process</h3>
+
+            <p>
+              Complete the entire voting process in just a few simple steps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+      <div class="container about-container">
+        <div class="about-image">
+          <img src="assets/aboutsectionimg.jpg" alt="About SecureVote" />
+        </div>
+
+        <div class="about-text">
+          <h2>About SecureVote</h2>
+
+          <p>
+            SecureVote is a web-based online voting system developed to make
+            elections simple, secure and transparent.
+          </p>
+
+          <p>
+            The platform allows authenticated voters to cast their votes online
+            while administrators manage elections, candidates and voting records
+            through a dedicated dashboard.
+          </p>
+
+          <button class="primary-btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!--How It Works section -->
+
+    <section class="steps" id="howitworks">
+      <div class="container">
+        <div class="section-title">
+          <h2>How It Works</h2>
+
+          <p>Voting takes only four simple steps.</p>
+        </div>
+
+        <div class="step-container">
+          <div class="step-box">
+            <span>1</span>
+
+            <h3>Register</h3>
+
+            <p>Create your account and verify your identity.</p>
+          </div>
+
+          <div class="step-box">
+            <span>2</span>
+
+            <h3>Login</h3>
+
+            <p>Login securely using your credentials and OTP verification.</p>
+          </div>
+
+          <div class="step-box">
+            <span>3</span>
+
+            <h3>Cast Vote</h3>
+
+            <p>Select your preferred candidate and submit your vote.</p>
+          </div>
+
+          <div class="step-box">
+            <span>4</span>
+
+            <h3>Results</h3>
+
+            <p>Track election results after voting is completed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Statistics Section -->
+
+    <section class="statistics">
+      <div class="container stats-container">
+        <div class="stat-card">
+          <h2>500+</h2>
+          <p>Registered Voters</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>25+</h2>
+          <p>Elections Conducted</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>100%</h2>
+          <p>Secure Voting</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>24×7</h2>
+          <p>System Availability</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Cast Your Vote?</h2>
+
+        <p>
+          Join SecureVote and experience a safe, transparent and efficient
+          online voting platform.
+        </p>
+
+        <button class="primary-btn">Get Started</button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+
+          <p>Have questions? We'd love to hear from you.</p>
+        </div>
+
+        <form>
+          <input type="text" placeholder="Your Name" />
+
+          <input type="email" placeholder="Your Email" />
+
+          <textarea rows="5" placeholder="Your Message"></textarea>
+
+          <button class="primary-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="container footer-container">
+        <div>
+          <h2>
+            <span class="blue">Secure</span><span class="green">Vote</span>
+          </h2>
+
+          <p>Secure, transparent and reliable online voting platform.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li><a href="#">Features</a></li>
+
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+
+          <p>Email : securevote@gmail.com</p>
+
+          <p>Phone : +91 9876543210</p>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 SecureVote | All Rights Reserved.</div>
+    </footer>
+  </body>
 </html>
