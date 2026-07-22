@@ -34,9 +34,7 @@ button {
   border: none;
 }
 
-/* ==========================
-        Common Classes
-========================== */
+/* Common Classes */
 
 .container {
   width: 90%;
@@ -52,9 +50,7 @@ button {
   color: #22c55e;
 }
 
-/* ==========================
-        Navbar
-========================== */
+/* Navbar */
 
 header {
   width: 100%;
@@ -106,6 +102,66 @@ nav ul li a:hover {
   color: #2563eb;
   font-weight: 600;
 }
+nav ul li a{
+
+    color:#333;
+    font-size:16px;
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+/* Hover */
+
+nav ul li a:hover{
+
+    color:#2563eb;
+
+}
+
+/* Active Link */
+
+nav ul li a.active{
+
+    color:#2563eb;
+
+}
+
+/* Underline Animation */
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0%;
+
+    height:2px;
+
+    background:#2563eb;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after{
+
+    width:100%;
+
+}
+section{
+
+    scroll-margin-top:90px;
+
+}
 
 /* Buttons */
 
@@ -146,9 +202,7 @@ nav ul li a:hover {
   background: #1d4ed8;
 }
 
-/* ==========================
-        Hero Section
-========================== */
+/* Hero Section */
 
 .hero {
   padding: 70px 0;
